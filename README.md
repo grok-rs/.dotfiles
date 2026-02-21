@@ -60,7 +60,7 @@ sudo apt install fzf ripgrep fd-find build-essential
 ~/.dotfiles/
 ├── bin/          → ~/.local/scripts/
 ├── neovide/      → ~/.config/neovide/
-├── nvim/         → ~/.config/nvim/        (submodule)
+├── nvim/         → ~/.config/nvim/
 ├── personal/     → ~/.config/personal/    (submodule, private)
 ├── sway/         → ~/.config/sway/
 ├── tmux/         → ~/.tmux.conf
