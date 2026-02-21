@@ -2,7 +2,7 @@
 set -euo pipefail
 
 DOTFILES="$(cd "$(dirname "$0")" && pwd)"
-STOW_FOLDERS="bin,nvim,personal,tmux,zsh,sway,waybar,zed,neovide"
+STOW_FOLDERS="bin,nvim,personal,tmux,zsh,sway,waybar,zed,neovide,lazygit,lazydocker"
 
 cd "$DOTFILES"
 

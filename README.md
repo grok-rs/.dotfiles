@@ -13,6 +13,8 @@ Personal dotfiles for a Wayland/Sway Linux development environment, managed with
 | [Zed](https://zed.dev/) | `zed/` | Editor (alternative) |
 | [Tmux](https://github.com/tmux/tmux) | `tmux/` | Terminal multiplexer |
 | [Zsh](https://www.zsh.org/) | `zsh/` | Shell (Oh My Zsh + P10k) |
+| [Lazygit](https://github.com/jesseduffield/lazygit) | `lazygit/` | Git TUI |
+| [Lazydocker](https://github.com/jesseduffield/lazydocker) | `lazydocker/` | Docker TUI |
 | Custom scripts | `bin/` | tmux-sessionizer, etc. |
 
 ## Quick Start
@@ -59,6 +61,8 @@ sudo apt install fzf ripgrep fd-find build-essential
 ```
 ~/.dotfiles/
 ├── bin/          → ~/.local/scripts/
+├── lazydocker/   → ~/.config/lazydocker/
+├── lazygit/      → ~/.config/lazygit/
 ├── neovide/      → ~/.config/neovide/
 ├── nvim/         → ~/.config/nvim/
 ├── personal/     → ~/.config/personal/    (submodule, private)
