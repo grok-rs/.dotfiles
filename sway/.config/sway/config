@@ -258,3 +258,9 @@ bindsym Print exec grim - | wl-copy
 
 # Select area to screenshot to clipboard
 bindsym Shift+Print exec grim -g "$(slurp)" - | wl-copy
+
+#exec systemctl --user restart xdg-desktop-portal xdg-desktop-portal-wlr
+#exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user restart xdg-desktop-portal{,-wlr}

@@ -3,7 +3,7 @@
     "position": "bottom",
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": [],
-    "modules-right": ["load", "memory", "disk", "sway/language", "custom/vpn", "network", "pulseaudio", "battery", "clock"],
+    "modules-right": ["load", "memory", "disk", "sway/language", "network", "pulseaudio", "battery", "clock"],
     "battery": {
         "format": "{capacity}%"
     },
@@ -62,13 +62,5 @@
         "scroll-step": 1,
         "on-click": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
-    },
-    "custom/vpn": {
-        "format": "{}",
-        "exec": "/home/dromix/.local/scripts/vpn-control.sh status",
-        "tooltip": true,
-        "return-type": "json",
-        "interval": 1,
-        "on-click": "/home/dromix/.local/scripts/vpn-control.sh toggle"
     }
 }

@@ -84,14 +84,13 @@ plugins=(
 	zsh-autosuggestions
   terraform
   kubectl
-  ansible
-  minikube
   tmux
   kubectx
   helm
-  vagrant
   alias-tips
   aws
+  rust
+  direnv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -155,3 +154,5 @@ export NVM_DIR="$HOME/.config/nvm"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="$HOME/.tfenv/bin:$PATH"
+export PATH="$HOME/.local/share/coursier/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
