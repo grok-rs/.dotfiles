@@ -1,3 +1,2 @@
-bin/.local/bin
 *.log
-nvim/.config/nvim/plugin/packer_compiled.lua
+.DS_Store

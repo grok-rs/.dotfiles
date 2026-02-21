@@ -1,15 +1,13 @@
 export XDG_CONFIG_HOME=$HOME/.config
-VIM="neovide"
-
-PERSONAL=$XDG_CONFIG_HOME/personal
-source $PERSONAL/env
-for i in `find -L $PERSONAL`; do
-    source $i
-done
-
+export DOTFILES=$HOME/.dotfiles
+export VIM="neovide"
 export GOPATH=$HOME/go
 export GIT_EDITOR=$VIM
-export DOTFILES=$HOME/.dotfiles
+
+# Source personal configs (env, alias, paths)
+for f in $HOME/.config/personal/*; do
+    [[ -f "$f" ]] && source "$f"
+done
 
 addToPathFront $HOME/.local/.npm-global/bin
 addToPathFront $HOME/.local/scripts

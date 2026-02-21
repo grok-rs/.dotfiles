@@ -7,8 +7,7 @@ STOW_FOLDERS="${STOW_FOLDERS:-bin,nvim,personal,tmux,zsh,sway,waybar,zed,neovide
 cd "$DOTFILES"
 for folder in $(echo "$STOW_FOLDERS" | tr ',' ' '); do
     if [[ -d "$folder" ]]; then
-        echo "Linking $folder..."
-        stow -D "$folder" 2>/dev/null || true
-        stow "$folder"
+        echo "Unlinking $folder..."
+        stow -D "$folder"
     fi
 done

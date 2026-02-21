@@ -26,9 +26,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_profile
-source ~/.config/personal/alias
-source ~/.config/personal/env
-source ~/.config/personal/paths
 
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
