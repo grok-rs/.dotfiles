@@ -19,7 +19,7 @@ Personal dotfiles for a Wayland/Sway Linux development environment, managed with
 
 ```bash
 # Clone
-git clone --recursive git@github.com:dromix/.dotfiles.git ~/.dotfiles
+git clone --recursive git@github.com:grok-rs/.dotfiles.git ~/.dotfiles
 
 # Install
 cd ~/.dotfiles
