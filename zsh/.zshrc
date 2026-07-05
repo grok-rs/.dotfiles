@@ -47,3 +47,19 @@ export NVM_DIR="$HOME/.config/nvm"
 export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH="$HOME/.local/share/coursier/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+. "$HOME/.moon/bin/env"
+
+# bun completions
+[ -s "/home/dromix/.bun/_bun" ] && source "/home/dromix/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# SOPS age key for the leadgram gitops secrets (e.g. sops -d envs/prod/secrets/*.yaml)
+export SOPS_AGE_KEY_FILE="$HOME/.config/sops/age/leadgram-prod.txt"
